@@ -1,0 +1,131 @@
+/* Center Styling */
+html,
+body,
+.roam-main,
+#app {
+  background: var(--page-background-color) !important;}
+
+.roam-body {
+  background: var(--page-background-color);
+  box-shadow: none !important; }
+
+.roam-body-main {
+  border-left: 1px solid var(--subtle-border-color) !important;
+  border-top: 1px solid var(--subtle-border-color) !important;
+  border-right: 1px solid var(--subtle-border-color) !important;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: var(--global-shadow) !important; /* 0,0,0, 0.03 */
+  overflow: visible !important;
+  background: var(--main-area-background-color) !important;
+  margin-right: 8px;
+  margin-left: 10px; }
+
+/* Topbar Styling */
+.rm-topbar {
+  background: var(--page-background-color) !important;
+  border-bottom: none !important; 
+  opacity: var(--resting-opacity); 
+  transition: opacity var(--opacity-speed) !important; 
+  justify-content: left; }
+
+.rm-topbar input#find-or-create-input {
+    box-shadow: none !important;
+    border: 2px solid var(--search-border-color) !important; }
+
+.rm-topbar:hover { opacity: 1; }
+
+.rm-topbar__left-spacer { display: none; }
+
+/* Right Sidebar Styling */
+#right-sidebar {
+  background: var(--page-background-color) !important;
+  box-shadow: none !important;
+  margin-left: 0px;
+  border: none !important;
+  transition: none !important;
+  overflow: hidden !important; }
+ 
+
+#right-sidebar .rm-resize-handle { /*:hover {} Also, Pull Slowly!*/
+    border-left: 1px dashed rgba(128,128,128,0.25); }
+    
+/* Sidebar Color */
+.roam-sidebar-container {
+  background: var(--page-background-color) !important;
+  box-shadow: none !important;
+  opacity: var(--resting-opacity);
+  transition: opacity var(--opacity-speed) !important;
+  border-radius: 12px;
+} .roam-sidebar-container:hover {
+  opacity: 1; }
+
+/* Sidebar Hover Color */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background-color: var(--secondary-background-color) !important;
+  border-radius: 0px var(--global-border-radius) var(--global-border-radius) 0px;
+  color: var(--link-color-alt) !important; 
+}
+
+/* Smaller, lighter Sidebar Text */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.bp3-minimal > div {
+  color: var(--font-color-lighter) !important;
+  font-size: 13px !important; }
+
+/* Change Padding and Sizes */
+.roam-sidebar-content {
+  padding: 0 !important; }
+.roam-sidebar-content div {
+  line-height: 1.2 !important; }
+.roam-sidebar-content .rm-db-title {
+  margin-top: 0 !important;
+  color: var(--font-color-lighter) !important ; }
+
+.starred-pages-wrapper > div:first-child {
+  display: none; }
+.starred-pages-wrapper .flex-h-box,
+.starred-pages-wrapper .flex-h-box span {
+  font-size: 13px !important; }
+.bp3-icon-star {
+  padding-left: 24px !important; }
+
+.roam-sidebar-content {
+  padding: 0 !important; }
+  .roam-sidebar-content > div:not(.log-button):not(:first-child) {
+    padding: 0 !important; }
+  .roam-sidebar-content > div:first-child {
+    padding-bottom: 18px !important; }
+  .roam-sidebar-content div {
+    line-height: 1.2 !important; }
+  .roam-sidebar-content .rm-db-title {
+    margin-top: 0 !important;
+    color: var(--font-color-lighter) !important ; }
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  padding: 6px 24px 6px !important; }
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .shortcut {
+  padding: 14px 24px 0; }
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row {
+  padding: 12px 0 0 20px; }
+  .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: inherit; }
+ebar-container .roam-sidebar-content .top-row {
+  padding: 12px 0 0 20px; }
+  .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: inherit; }
+
+#roam-sidebar-logo {
+  display: none !important; }
+  
+/* Textbox Styling */  
+.rm-autocomplete__wrapper {
+  border-radius: 5px 0px 0px 5px;
+  border-top: 1px solid rgba(16,106,162,0.25);
+  border-bottom: 1px solid rgba(16,106,162,0.25);
+}
+
+
